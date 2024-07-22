@@ -11,7 +11,7 @@ const Home = ({ addToTeam, team, notification }) => {
   const fetchRandomPokemon = async () => {
     setError('');
     setLoading(true);
-    const randomId = Math.floor(Math.random() * 1300) + 1;
+    const randomId = Math.floor(Math.random() * 800) + 1;
     try {
       const result = await axios.get(`https://pokeapi.co/api/v2/pokemon/${randomId}`);
       setPokemon(result.data);
@@ -67,11 +67,6 @@ const Home = ({ addToTeam, team, notification }) => {
       </div>
       {loading && <p className="text-white">Loading...</p>}
       {error && <p className="text-red-500 text-lg">{error}</p>}
-      {/* {notification && (
-        <div className="bg-red-500 text-white px-4 py-2 rounded mb-4">
-          {notification}
-        </div>
-      )} */}
       {pokemon && (
         <div className="bg-white rounded-lg shadow-lg p-6 text-center">
           <h2 className="text-3xl font-semibold">{pokemon.name}</h2>
