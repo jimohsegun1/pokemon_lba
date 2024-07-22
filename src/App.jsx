@@ -6,10 +6,13 @@ import MyTeam from './components/MyTeam';
 import './App.css';
 
 const App = () => {
-  const [team, setTeam] = useState(() => {
+
+  const getInitialTeam = () => {
     const savedTeam = localStorage.getItem('pokemonTeam');
     return savedTeam ? JSON.parse(savedTeam) : [];
-  });
+  };
+  
+  const [team, setTeam] = useState(getInitialTeam);
 
   const [notification, setNotification] = useState('');
   const [isVisible, setIsVisible] = useState(false);
