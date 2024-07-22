@@ -41,7 +41,7 @@ const Home = ({ addToTeam, team, notification }) => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-blue-400 to-purple-600 p-6 md:p-10 lg:p-16">
       <h1 className="text-5xl font-bold text-white mb-8 text-center">Pokémon Search</h1>
-      <div className="flex flex-col md:flex-row md:space-x-4 mb-6 w-full">
+      <div className="flex flex-col md:flex-row md:space-x-4 mb-6 w-full lg:w-auto">
         <button 
           onClick={fetchRandomPokemon} 
           className="bg-white text-blue-600 font-semibold py-3 px-6 rounded shadow hover:bg-blue-100 transition duration-200 w-full md:w-auto"
