@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const MyTeam = ({ team, removeFromTeam }) => {
   return (
     <div className="min-h-screen bg-gradient-to-r from-blue-400 to-purple-600 p-6 md:p-10 lg:p-16">
-      <h1 className="text-5xl font-bold text-white mb-8 text-center">Your Pokémon Team</h1>
+      <h1 className="text-5xl font-bold text-white mb-8 text-center">My Pokémon Team</h1>
       {team.length === 0 ? (
         <p className="text-white text-lg text-center">No Pokémon in your team</p>
       ) : (
