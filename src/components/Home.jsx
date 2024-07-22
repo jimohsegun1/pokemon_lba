@@ -11,7 +11,7 @@ const Home = ({ addToTeam, team, notification }) => {
   const fetchRandomPokemon = async () => {
     setError('');
     setLoading(true);
-    const randomId = Math.floor(Math.random() * 898) + 1;
+    const randomId = Math.floor(Math.random() * 1300) + 1;
     try {
       const result = await axios.get(`https://pokeapi.co/api/v2/pokemon/${randomId}`);
       setPokemon(result.data);
