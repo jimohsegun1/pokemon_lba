@@ -44,7 +44,7 @@ const App = () => {
   return (
     <Router>
       {isVisible && (
-        <div className={`notification ${isVisible ? 'fade-in' : 'fade-out'}`}>
+        <div className={`notification`}>
           {notification}
         </div>
       )}
